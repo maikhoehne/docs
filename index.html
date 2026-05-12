@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Geschichte der SG &quot;Turbine&quot; Vockerode e.V. - moderne Klon-Variante mit Fortf&uuml;hrung 2006-2026.">
+<meta name="robots" content="noindex,nofollow">
+<title>Geschichte &middot; SG &bdquo;Turbine&ldquo; Vockerode e.V. (moderne Variante)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0a4d9c;
+    --blue-soft:#e6f0fb;
+    --yellow:#f5b800;
+    --yellow-soft:#fff7da;
+    --ink:#0b1220;
+    --ink-2:#1f2937;
+    --muted:#64748b;
+    --line:#e6e8ec;
+    --bg:#ffffff;
+    --bg-soft:#f6f7f9;
+    --bg-tinted:#fafaf7;
+    --link:#0e4ea0;
+    --maxw:1180px;
+    --radius:16px;
+    --radius-sm:10px;
+    --shadow:0 1px 2px rgba(15,23,42,.05),0 8px 24px -12px rgba(15,23,42,.10);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:"Inter","Segoe UI",system-ui,-apple-system,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+    font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;height:auto;display:block}
+  a{color:var(--link);text-decoration:none;font-weight:500}
+  a:hover{text-decoration:underline}
+
+  /* ---- Klon-Hinweis ---- */
+  .clone-banner{
+    background:linear-gradient(90deg,var(--yellow-soft),#fff);
+    border-bottom:1px solid #f0e7c2;
+    color:#6b5300;
+    font-size:.8rem;
+    padding:.6rem 1.25rem;
+    text-align:center;
+    letter-spacing:.01em;
+  }
+  .clone-banner strong{color:#3b2900}
+
+  /* ---- Header ---- */
+  header.site-header{
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:saturate(140%) blur(10px);
+    -webkit-backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid var(--line);
+    z-index:20;
+  }
+  .header-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:14px 24px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .logo{height:42px;width:auto}
+  .brand-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.15;
+  }
+  .brand-text .name{
+    font-weight:700;
+    font-size:1.02rem;
+    color:var(--ink);
+  }
+  .brand-text .slogan{
+    font-size:.78rem;
+    color:var(--muted);
+    letter-spacing:.04em;
+    text-transform:uppercase;
+  }
+  nav.primary{
+    margin-left:auto;
+    display:flex;
+    gap:6px;
+    align-items:center;
+  }
+  nav.primary a{
+    color:var(--ink-2);
+    font-weight:500;
+    font-size:.92rem;
+    padding:7px 12px;
+    border-radius:999px;
+  }
+  nav.primary a:hover{
+    background:var(--bg-soft);
+    text-decoration:none;
+    color:var(--ink);
+  }
+  nav.primary a.active{
+    background:var(--ink);
+    color:#fff;
+  }
+
+  /* ---- Hero ---- */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(1200px 400px at 80% -20%,var(--blue-soft) 0%,transparent 60%),
+      radial-gradient(900px 350px at -10% 120%,var(--yellow-soft) 0%,transparent 60%),
+      var(--bg);
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:64px 24px 56px;
+  }
+  .eyebrow{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    background:#fff;
+    border:1px solid var(--line);
+    color:var(--ink-2);
+    font-size:.78rem;
+    padding:5px 12px;
+    border-radius:999px;
+    font-weight:600;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    box-shadow:var(--shadow);
+  }
+  .eyebrow .dot{
+    width:8px;
+    height:8px;
+    border-radius:999px;
+    background:var(--blue);
+  }
+  h1.page-title{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:700;
+    font-size:clamp(2.2rem,5vw,3.6rem);
+    letter-spacing:-.015em;
+    margin:18px 0 12px;
+    line-height:1.05;
+  }
+  .lead{
+    max-width:680px;
+    font-size:1.08rem;
+    color:var(--ink-2);
+    margin:0 0 24px;
+  }
+  .stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin-top:18px;
+    max-width:760px;
+  }
+  .stat{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius-sm);
+    padding:14px 16px;
+    box-shadow:var(--shadow);
+  }
+  .stat .num{
+    font-family:"Fraunces",Georgia,serif;
+    font-size:1.7rem;
+    font-weight:700;
+    color:var(--blue);
+    line-height:1;
+  }
+  .stat .lbl{
+    margin-top:6px;
+    font-size:.78rem;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+
+  /* ---- Layout ---- */
+  .layout{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:56px 24px 80px;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 240px;
+    gap:48px;
+  }
+
+  /* ---- Sticky Jahres-Navigation ---- */
+  aside.toc{
+    position:sticky;
+    top:90px;
+    align-self:start;
+    max-height:calc(100vh - 110px);
+    overflow:auto;
+    font-size:.88rem;
+  }
+  aside.toc h4{
+    margin:0 0 10px;
+    font-size:.74rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:var(--muted);
+  }
+  aside.toc ol{
+    list-style:none;
+    padding:0;
+    margin:0;
+    border-left:1px solid var(--line);
+  }
+  aside.toc li a{
+    display:block;
+    padding:6px 12px;
+    color:var(--ink-2);
+    border-left:2px solid transparent;
+    margin-left:-1px;
+    font-weight:500;
+  }
+  aside.toc li a:hover{
+    color:var(--blue);
+    text-decoration:none;
+    border-left-color:var(--blue);
+    background:var(--bg-soft);
+  }
+  aside.toc .sep{
+    margin:14px 0 8px;
+    font-size:.7rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:var(--muted);
+    padding-left:12px;
+  }
+
+  /* ---- Sektionen ---- */
+  main h2{
+    font-family:"Fraunces",Georgia,serif;
+    font-size:1.8rem;
+    margin:0 0 8px;
+    letter-spacing:-.01em;
+  }
+  main h2 .accent{
+    display:inline-block;
+    width:32px;
+    height:4px;
+    background:var(--blue);
+    border-radius:2px;
+    vertical-align:middle;
+    margin-right:12px;
+  }
+  main .section-lead{
+    color:var(--muted);
+    margin:0 0 28px;
+    max-width:640px;
+  }
+
+  /* ---- Bestand: Timeline ---- */
+  .timeline{
+    position:relative;
+    padding-left:28px;
+    margin-bottom:60px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:9px;
+    top:6px;
+    bottom:6px;
+    width:2px;
+    background:linear-gradient(var(--line),var(--line) 60%,transparent);
+  }
+  .tl-item{
+    position:relative;
+    padding:4px 0 32px 0;
+  }
+  .tl-item::before{
+    content:"";
+    position:absolute;
+    left:-23px;
+    top:8px;
+    width:12px;
+    height:12px;
+    background:#fff;
+    border:2px solid var(--blue);
+    border-radius:999px;
+    box-shadow:0 0 0 4px #fff;
+  }
+  .tl-year{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:700;
+    font-size:1.1rem;
+    color:var(--blue);
+    letter-spacing:.01em;
+    margin-bottom:4px;
+  }
+  .tl-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:16px 18px;
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:18px;
+    box-shadow:var(--shadow);
+  }
+  .tl-card.no-img{grid-template-columns:1fr}
+  .tl-card .pic{
+    border-radius:var(--radius-sm);
+    overflow:hidden;
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    aspect-ratio:1/1;
+  }
+  .tl-card .pic img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .35s ease;
+  }
+  .tl-card .pic:hover img{transform:scale(1.04)}
+  .tl-card p{margin:0;color:var(--ink-2)}
+  .tl-card .cap{
+    color:var(--muted);
+    font-size:.78rem;
+    margin-top:8px;
+    display:block;
+  }
+
+  /* ---- Fortführung: Jahres-Karten ---- */
+  .years{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+  .year-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .year-card::before{
+    content:"";
+    position:absolute;
+    left:0;top:0;bottom:0;
+    width:4px;
+    background:linear-gradient(var(--blue),#3e8fd4);
+    border-radius:4px 0 0 4px;
+  }
+  .year-card.placeholder{
+    background:
+      repeating-linear-gradient(135deg,#fafafa,#fafafa 10px,#f3f3f3 10px,#f3f3f3 20px);
+    color:var(--muted);
+    text-align:center;
+    font-style:italic;
+    padding:24px;
+  }
+  .year-card.placeholder::before{
+    background:linear-gradient(var(--line),var(--line));
+  }
+  .year-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:14px;
+  }
+  .year-head h3{
+    font-family:"Fraunces",Georgia,serif;
+    font-size:1.55rem;
+    margin:0;
+    color:var(--ink);
+  }
+  .year-head .count{
+    font-size:.78rem;
+    color:var(--muted);
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    padding:3px 10px;
+    border-radius:999px;
+  }
+  .year-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  .year-card li{
+    padding:10px 0;
+    border-top:1px solid var(--line);
+  }
+  .year-card li:first-child{border-top:none;padding-top:0}
+  .year-card li .when{
+    font-weight:600;
+    color:var(--ink);
+    margin-right:6px;
+  }
+  .year-card li .src{
+    display:inline-block;
+    margin-top:4px;
+    font-size:.78rem;
+    color:var(--muted);
+  }
+  .year-card li .src .pill{
+    display:inline-block;
+    background:var(--blue-soft);
+    color:var(--blue);
+    border:1px solid #b9d3ef;
+    padding:1px 8px;
+    border-radius:999px;
+    font-weight:600;
+    font-size:.72rem;
+    margin-right:6px;
+    letter-spacing:.02em;
+  }
+
+  /* ---- Footer ---- */
+  footer.site-footer{
+    background:var(--ink);
+    color:#cbd5e1;
+    padding:36px 0;
+    font-size:.9rem;
+  }
+  footer .footer-inner{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    justify-content:space-between;
+    align-items:center;
+  }
+  footer a{color:#e2e8f0}
+  footer a:hover{color:#fff}
+  footer .meta{
+    font-size:.78rem;
+    color:#94a3b8;
+  }
+
+  /* ---- Reponsiv ---- */
+  @media (max-width:980px){
+    .layout{grid-template-columns:1fr;gap:32px}
+    aside.toc{
+      position:static;
+      max-height:none;
+      order:2;
+    }
+    aside.toc ol{
+      display:flex;
+      flex-wrap:wrap;
+      border-left:none;
+      gap:4px;
+    }
+    aside.toc li a{
+      border-left:none;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:5px 10px;
+    }
+    aside.toc .sep{display:none}
+  }
+  @media (max-width:680px){
+    .header-inner{flex-wrap:wrap}
+    nav.primary{
+      order:3;
+      width:100%;
+      overflow-x:auto;
+      flex-wrap:nowrap;
+      padding-bottom:6px;
+    }
+    nav.primary a{white-space:nowrap}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .tl-card{grid-template-columns:1fr}
+    .tl-card .pic{aspect-ratio:16/10}
+  }
+</style>
+</head>
+<body>
+
+<div class="clone-banner">
+  Lokaler Arbeits-Klon &middot; moderne Variante &middot; Original:
+  <a href="https://www.turbine-vockerode.de/?page_id=30" target="_blank" rel="noopener">turbine-vockerode.de/?page_id=30</a>.
+  Inhalte 1905&ndash;2006 entsprechen dem Original; Abschnitt <strong>Fortf&uuml;hrung 2006&ndash;2026</strong> wird laufend erg&auml;nzt.
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="https://www.turbine-vockerode.de/" target="_blank" rel="noopener" aria-label="Zur Startseite des Vereins">
+      <img class="logo" src="https://www.turbine-vockerode.de/wp-content/uploads/2021/09/cropped-Logo_Rand_rechts.png" alt="SG Turbine Vockerode e.V.">
+    </a>
+    <div class="brand-text">
+      <span class="name">SG &bdquo;Turbine&ldquo; Vockerode e.V.</span>
+      <span class="slogan">Energie im Herz &middot; Stark im Team</span>
+    </div>
+    <nav class="primary" aria-label="Hauptnavigation">
+      <a href="https://www.turbine-vockerode.de/" target="_blank" rel="noopener">Home</a>
+      <a href="https://www.turbine-vockerode.de/?page_id=24" target="_blank" rel="noopener">Vorstand</a>
+      <a class="active" href="#" aria-current="page">Geschichte</a>
+      <a href="https://www.turbine-vockerode.de/?page_id=1025" target="_blank" rel="noopener">Galerie</a>
+      <a href="https://www.turbine-vockerode.de/?page_id=264" target="_blank" rel="noopener">Downloads</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow"><span class="dot"></span>Vereinschronik &middot; 1905 &ndash; 2026</span>
+    <h1 class="page-title">Geschichte.<br>Energie im Herz, &uuml;ber Generationen.</h1>
+    <p class="lead">Von der Fahnenweihe des Turnvereins 1912 &uuml;ber die Gr&uuml;ndung der BSG &bdquo;Turbine&ldquo; 1951 bis zur heutigen Sportgemeinschaft mit ihren Abteilungen: Diese Seite f&uuml;hrt die Vereinschronik fort und schlie&szlig;t die L&uuml;cke zwischen Bestand (bis 2006) und Gegenwart (2026).</p>
+    <div class="stats">
+      <div class="stat"><div class="num">1951</div><div class="lbl">Gr&uuml;ndung BSG</div></div>
+      <div class="stat"><div class="num">75</div><div class="lbl">Jahre 2026</div></div>
+      <div class="stat"><div class="num">140+</div><div class="lbl">Aktive Mitglieder</div></div>
+      <div class="stat"><div class="num">11</div><div class="lbl">Abteilungen</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+
+  <main>
+
+    <!-- =============== BESTAND =============== -->
+    <h2><span class="accent"></span>Bestand 1905&ndash;2006</h2>
+    <p class="section-lead">Inhalt &uuml;bernommen aus der offiziellen Vereinschronik auf turbine-vockerode.de &mdash; Wortlaut unver&auml;ndert, neu strukturiert als Zeitleiste.</p>
+
+    <div class="timeline" id="bestand">
+
+      <div class="tl-item" id="y1905">
+        <div class="tl-year">1905 &middot; 1912</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/fahnenweihe.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/fahnenweihe.jpg" alt="Fahnenweihe des Turnvereins Vockerode 1912">
+          </a>
+          <div>
+            <p>Die Tradition des Sports in Vockerode reicht bis in die Anf&auml;nge des vorigen Jahrhunderts. 1905 existierte ein Turnverein, der am 12. Mai 1912 die Fahnenweihe durchf&uuml;hrte.</p>
+            <span class="cap">Fahnenweihe des Turnvereins, 12. Mai 1912</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1951">
+        <div class="tl-year">1951 &middot; 1954</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/kegelmannschaft.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/kegelmannschaft.jpg" alt="Kegelmannschaft Kreismeister 1975">
+          </a>
+          <div>
+            <p>Die heutige Sportgemeinschaft sieht sich in einer langj&auml;hrigen Tradition des Sports in der Gemeinde. Sie ist die Nachfolgerin der am 01. Mai 1951 gegr&uuml;ndeten Betriebssportgemeinschaft &bdquo;Turbine&ldquo; Vockerode. Schon die Bezeichnung Turbine weist auf die enge Verbindung zum neu entstehenden Kraftwerk hin, das am 10. Oktober 1954 seinen Probebetrieb aufnahm.</p>
+            <span class="cap">Kegelmannschaft, Kreismeister 1975</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1956">
+        <div class="tl-year">1956 &middot; 1957</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/fussballer_bsg.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/fussballer_bsg.jpg" alt="Fu&szlig;baller der BSG 1954">
+          </a>
+          <div>
+            <p>Erster Leiter der Sportgemeinschaft war Karl M&uuml;ller. Vorwiegend wurde Fu&szlig;ball und Handball gespielt. 1956 wurde eine neue Kegelbahn in Betrieb genommen, was zu einem Aufschwung der Kegelsportbewegung und zur Erringung des Kreismeisters 1957 f&uuml;hrte.</p>
+            <span class="cap">Fu&szlig;baller der BSG, 1954</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1961">
+        <div class="tl-year">1961 &middot; 1968 &middot; 1976</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/handballmannschaft.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/handballmannschaft.jpg" alt="Handballmannschaft Kreismeister 1968">
+          </a>
+          <div>
+            <p>1961 wurde die Turnhalle im Kraftwerksgel&auml;nde in Betrieb genommen und die Kegelbahn erweitert. In vielen freiwilligen Stunden schufen sich die Sportler ein Sportheim, das am 07.10.1968 eingeweiht wurde. Im gleichen Jahr wurden die Handballer Kreismeister und stiegen in die Kreisliga auf. 1976 feierte die Betriebssportgemeinschaft ihr 25-j&auml;hriges Bestehen.</p>
+            <span class="cap">Handballmannschaft, Kreismeister 1968</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1981">
+        <div class="tl-year">1981</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/badminton_1981.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/badminton_1981.jpg" alt="Badmintonspieler der 80er Jahre">
+          </a>
+          <div>
+            <p>Am 8. April 1981 wurde die Sektion Badminton gegr&uuml;ndet.</p>
+            <span class="cap">Badmintonspieler der 80er Jahre</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1986">
+        <div class="tl-year">1986</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/auszeichnung.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/auszeichnung.jpg" alt="Auszeichnung mit der Ehrenplakette des DTSB 1986">
+          </a>
+          <div>
+            <p>1986 wurde der Ort Vockerode mit der Ehrenplakette des Pr&auml;sidiums des DTSB der DDR geehrt. Die BSG hatte daran wesentlichen Anteil. Diese Plakette wurde am 22. Mai 1986 in einer offiziellen Veranstaltung am Rathaus der Gemeinde Vockerode angebracht. In dieser Zeit bestanden in der BSG 10 Sektionen (Fu&szlig;ball, Handball, Volleyball, Tischtennis, Laufen, Kegeln, Badminton, Gymnastik, Wasserwandern, Lehrlingssport).</p>
+            <span class="cap">Verleihung DTSB-Ehrenplakette, 22.05.1986</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1990">
+        <div class="tl-year">1990 &middot; 1991 &middot; 1998</div>
+        <div class="tl-card no-img">
+          <div>
+            <p>Die gesellschaftlichen Ver&auml;nderungen 1989/90 f&uuml;hrten zur Aufl&ouml;sung der Betriebssportgemeinschaft und zur Bildung der Sportgemeinschaft &bdquo;Turbine&ldquo; e.V.; diese wurde am 26. Juli 1990 im Vereinigungsregister des Kreisgerichtes Gr&auml;fenhainichen registriert. Am 8. April 1991 wurde der SG &bdquo;Turbine&ldquo; e.V. die ordentliche Mitgliedschaft im Landessportbund Sachsen-Anhalt zuerkannt. 1998 wurden die Abteilungen Fu&szlig;ball, Kegeln und Tischtennis eigene selbst&auml;ndige Vereine; Volleyball, Wasserwandern, Gymnastik und Badminton f&uuml;hrten die Tradition als SG &bdquo;Turbine&ldquo; e.V. fort.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item" id="y1997">
+        <div class="tl-year">1997 &middot; 2005 &middot; 2006</div>
+        <div class="tl-card">
+          <a class="pic" href="https://www.turbine-vockerode.de/pics/geschichte/bootssteganlage.jpg" target="_blank" rel="noopener">
+            <img src="https://www.turbine-vockerode.de/pics/geschichte/mini/bootssteganlage.jpg" alt="Bootssteganlage an der Elbe">
+          </a>
+          <div>
+            <p>Neu gebildet wurden die Abteilung Seniorensport (1997) und die Abteilung Skateboard und BMX (2006). Die Wasserwanderer konnten 2005 eine neue Steganlage am Elbe-km 245,2 in Besitz nehmen. 2006 mietete der Verein eine zus&auml;tzliche Sporthalle f&uuml;r Skateboard und BMX vom Unternehmen Vattenfall Europe.</p>
+            <span class="cap">Neue Steganlage am Elbe-km 245,2, 2005</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- =============== FORTFUEHRUNG =============== -->
+    <h2><span class="accent"></span>Fortf&uuml;hrung 2006&ndash;2026</h2>
+    <p class="section-lead">Arbeitsstand 11.05.2026. Eintr&auml;ge werden aus Protokollen, Aush&auml;ngen, Pressberichten, Fotos und Zeitzeugen-Notizen aufgebaut. Quellen-IDs verweisen auf das <em>QUELLENREGISTER.xlsx</em> im Projektordner.</p>
+
+    <div class="years">
+
+      <div class="year-card" id="y2006">
+        <div class="year-head"><h3>2006</h3><span class="count">1 Eintrag</span></div>
+        <ul>
+          <li>
+            <span class="when">Anschluss an Bestand &mdash;</span>
+            Gr&uuml;ndung der Abteilung Skateboard und BMX; Anmietung einer zus&auml;tzlichen Sporthalle vom Unternehmen Vattenfall Europe.
+            <span class="src"><span class="pill">Quelle</span>Vereinschronik (Bestand)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="year-card placeholder" id="y2007">
+        2007&ndash;2018 &middot; Noch ohne Eintr&auml;ge &mdash; Material aus diesem Zeitraum wird gesucht (Protokolle, Fotos, Pressartikel).
+      </div>
+
+      <div class="year-card" id="y2019">
+        <div class="year-head"><h3>2019</h3><span class="count">2 Eintr&auml;ge</span></div>
+        <ul>
+          <li>
+            <span class="when">06.09.2019 &mdash;</span>
+            Vereinsgrillen am Bootshaus an der Elbe.
+            <span class="src"><span class="pill">Q&middot;Galerie</span>turbine-vockerode.de/?page_id=986</span>
+          </li>
+          <li>
+            <span class="when">19.11.2019 &mdash;</span>
+            Volksstimme berichtet &uuml;ber das j&auml;hrliche Volleyballturnier: &bdquo;TSV-&sbquo;Monsterblocker&lsquo; und &sbquo;Gummib&auml;renbande&lsquo; siegreich&ldquo;.
+            <span class="src"><span class="pill">Q-0003</span>Volksstimme, 19.11.2019</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="year-card placeholder" id="y2020">
+        2020 &middot; Corona-Pandemie &mdash; Material zum Vereinsbetrieb wird gesucht.
+      </div>
+
+      <div class="year-card" id="y2021">
+        <div class="year-head"><h3>2021</h3><span class="count">1 Eintrag</span></div>
+        <ul>
+          <li>
+            <span class="when">20.11.2021 &mdash;</span>
+            Gemeinsamer Arbeitseinsatz am Bootshaus.
+            <span class="src"><span class="pill">Q&middot;Galerie</span>turbine-vockerode.de/?page_id=1591</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="year-card" id="y2022">
+        <div class="year-head"><h3>2022</h3><span class="count">2 Eintr&auml;ge</span></div>
+        <ul>
+          <li>
+            <span class="when">22.07.2022 &mdash;</span>
+            Vorbericht in der Mitteldeutschen Zeitung: &bdquo;Feier f&uuml;r den Ort und mit ihm&ldquo;.
+            <span class="src"><span class="pill">Q-0002</span>MZ, 22.07.2022</span>
+          </li>
+          <li>
+            <span class="when">03.09.2022 &mdash;</span>
+            Sommerfest der SG &bdquo;Turbine&ldquo; Vockerode in Vockerode.
+            <span class="src"><span class="pill">Q&middot;Galerie</span>turbine-vockerode.de/?page_id=1868</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="year-card placeholder" id="y2023">
+        2023&ndash;2024 &middot; Noch ohne Eintr&auml;ge &mdash; Material wird gesucht.
+      </div>
+
+      <div class="year-card" id="y2025">
+        <div class="year-head"><h3>2025</h3><span class="count">1 Eintrag</span></div>
+        <ul>
+          <li>
+            <span class="when">Januar 2025 &mdash;</span>
+            Neugr&uuml;ndung der Abteilung Tischtennis f&uuml;r Kinder, Jugendliche und Erwachsene; eigene Abteilungsseite.
+            <span class="src"><span class="pill">Q-0007</span>turbine-vockerode.de/?page_id=2431</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="year-card" id="y2026">
+        <div class="year-head"><h3>2026</h3><span class="count">4 Eintr&auml;ge</span></div>
+        <ul>
+          <li>
+            <span class="when">22.01.2026 &mdash;</span>
+            Ank&uuml;ndigung des ersten DOSB-zertifizierten Gesundheitskurses der SG: &bdquo;Walking &ndash; Ausdauer auf Dauer&ldquo; (Kursleitung Ela Mei&szlig;ner, Lauf 04.03.&ndash;06.05.2026, F&ouml;rderung &uuml;ber gesetzliche Krankenkassen).
+            <span class="src"><span class="pill">Q-0004</span>Vereinswebseite, 22.01.2026</span>
+          </li>
+          <li>
+            <span class="when">27.04.2026 &mdash;</span>
+            Aktueller Vorstand laut Vereinswebseite: Bodo Riske (Vorsitzender), Nina Kokoschko-H&ouml;hne (stellv. Vorsitzende und Kommunal-Koordination), Kerstin Wulfert (Kassenwartin), Stefan Wulfert (&Ouml;ffentlichkeitsarbeit), Mandy Rosche (Mitgliedermanagement), Maik H&ouml;hne.
+            <span class="src"><span class="pill">Q-0006</span>turbine-vockerode.de/?page_id=24</span>
+          </li>
+          <li>
+            <span class="when">2026 &mdash;</span>
+            Er&ouml;ffnung des vereinseigenen Online-Shops f&uuml;r Vereinsbekleidung in Kooperation mit der Veloform Media GmbH (Sponsor: Raumausstatter Trixi).
+            <span class="src"><span class="pill">Q-0005</span>Vereinswebseite</span>
+          </li>
+          <li>
+            <span class="when">2026 &mdash;</span>
+            Abschluss der energetischen Sanierung der Turnhalle inkl. neuer Sanit&auml;ranlagen (Eigenmeldung des Vereins).
+            <span class="src"><span class="pill">Q&middot;Web</span>Vereinswebseite, Startseite</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ============= Sticky Jahres-Navigation ============= -->
+  <aside class="toc" aria-label="Jahres-Navigation">
+    <h4>Bestand</h4>
+    <ol>
+      <li><a href="#y1905">1905 &middot; 1912</a></li>
+      <li><a href="#y1951">1951 &middot; 1954</a></li>
+      <li><a href="#y1956">1956 &middot; 1957</a></li>
+      <li><a href="#y1961">1961&ndash;1976</a></li>
+      <li><a href="#y1981">1981</a></li>
+      <li><a href="#y1986">1986</a></li>
+      <li><a href="#y1990">1990&ndash;1998</a></li>
+      <li><a href="#y1997">1997&ndash;2006</a></li>
+    </ol>
+    <div class="sep">Fortf&uuml;hrung</div>
+    <ol>
+      <li><a href="#y2006">2006</a></li>
+      <li><a href="#y2007">2007&ndash;2018</a></li>
+      <li><a href="#y2019">2019</a></li>
+      <li><a href="#y2020">2020</a></li>
+      <li><a href="#y2021">2021</a></li>
+      <li><a href="#y2022">2022</a></li>
+      <li><a href="#y2023">2023&ndash;2024</a></li>
+      <li><a href="#y2025">2025</a></li>
+      <li><a href="#y2026">2026</a></li>
+    </ol>
+  </aside>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>SG &bdquo;Turbine&ldquo; Vockerode e.V. &middot; Energie im Herz. Stark im Team.</div>
+    <div>
+      <a href="https://www.turbine-vockerode.de/?page_id=32" target="_blank" rel="noopener">Kontakt</a> &middot;
+      <a href="https://www.turbine-vockerode.de/?page_id=1883" target="_blank" rel="noopener">Impressum</a> &middot;
+      <a href="https://www.turbine-vockerode.de/?page_id=420" target="_blank" rel="noopener">Datenschutz</a>
+    </div>
+    <div class="meta">Lokaler Arbeits-Klon &middot; statisches HTML5/CSS</div>
+  </div>
+</footer>
+
+</body>
+</html>
